@@ -1,0 +1,20 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3.5rem;
+}
+
+:host > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  app-shot-clock {
+    margin-bottom: 1rem;
+  }
+
+  [aria-label="Basketball"] {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,9 @@
+<div *ngFor="let backboard of backboards">
+  <app-shot-clock
+    [count]="(count$ | async)!"
+    (togglePause)="togglePause()"
+    (reset)="reset()"
+  ></app-shot-clock>
+
+  <span role="img" aria-label="Basketball">🏀</span>
+</div>
